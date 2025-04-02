@@ -1,0 +1,17 @@
+{
+  "streamBaseUrl": "https://gateway.doitbestradio.com/",
+  "defaultStationId": "default",
+  "autoStart": true,
+  "audioSettings": {
+    "volume": 80
+  },
+  "networkSettings": {
+    "retryInterval": 5000,
+    "maxRetries": 10
+  },
+  "dashboardSettings": {
+    "port": 3000,
+    "username": "admin",
+    "password": "changeme"
+  }
+}

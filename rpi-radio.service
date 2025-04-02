@@ -1,0 +1,17 @@
+[Unit]
+Description=RPi Radio Streaming Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/buck0five/rpi-radio
+ExecStart=/usr/bin/node /home/buck0five/rpi-radio/src/index.js
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=rpi-radio
+
+[Install]
+WantedBy=multi-user.target

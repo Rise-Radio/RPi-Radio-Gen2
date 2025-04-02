@@ -1,0 +1,13 @@
+{
+  "connectionType": "wifi",
+  "ssid": "BusinessWiFi",
+  "password": "wifi-password-here",
+  "hidden": false,
+  
+  "_staticConfig": "Settings below are used when connectionType is 'static'",
+  "ipAddress": "192.168.1.100",
+  "netmask": "255.255.255.0",
+  "gateway": "192.168.1.1",
+  "dns1": "8.8.8.8",
+  "dns2": "8.8.4.4"
+}

@@ -1,0 +1,13 @@
+[Unit]
+Description=USB Network Configuration Service
+After=local-fs.target
+Before=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/buck0five/rpi-radio/scripts/usb-network-config.sh
+TimeoutStartSec=60
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

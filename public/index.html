@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPi Radio Streamer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>RPi Radio Streamer</h1>
+    </header>
+    
+    <main>
+      <div class="card">
+        <h2>Stream Control</h2>
+        <div class="control-panel">
+          <button id="startButton" class="btn btn-primary">Start Stream</button>
+          <button id="stopButton" class="btn btn-danger">Stop Stream</button>
+        </div>
+        <div class="status">
+          <p>Status: <span id="streamStatus">Checking...</span></p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>Volume Control</h2>
+        <div class="volume-control">
+          <input type="range" id="volumeSlider" min="0" max="100" value="80">
+          <span id="volumeValue">80%</span>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>Station Selection</h2>
+        <div class="station-select">
+          <input type="text" id="stationId" placeholder="Enter station ID">
+          <button id="setStationButton" class="btn btn-secondary">Set Station</button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>Network Configuration</h2>
+        <div class="network-info">
+          <p>USB Network Configuration:</p>
+          <p>Place a <code>network.json</code> file on a USB drive to configure network settings.</p>
+          <p><a href="/network-template.json" download="network.json" class="btn btn-secondary">Download Template</a></p>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+# Rule for running network configuration when USB storage is inserted
+ACTION=="add", SUBSYSTEM=="block", ENV{DEVTYPE}=="partition", RUN+="/bin/bash -c 'sleep 2 && /home/buck0five/rpi-radio/scripts/usb-network-config.sh'"
